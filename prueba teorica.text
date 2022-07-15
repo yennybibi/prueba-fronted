@@ -10,7 +10,7 @@ col representa una o mas columnas dentro de una tanbla, y div sirve para crear s
 3. ¿Cuál de los siguientes atributos prioriza el navegador al asignar un valor
 CSS?
 
-R//para priorizar se puede usar un archivo externo, o dentro de  la etiqueta <style></style>
+R//para priorizar se puede usar un archivo externo, o dentro de  la etiqueta <style></style>, o estilos inline
 
 4. Encuentre el error en el siguiente fragmento de código:
 <form>
