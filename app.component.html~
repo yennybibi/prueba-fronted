@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Agenda de contacto</title>
+<link href="estilo,css" type="text/css" rel="stylesheet">
+</head>
+<body>
+</head>
+
+<body ng-app="miAgenda">
+
+  <form name="formContactos">
+    <div layout="row" id="contenedor-contactos" ng-controller="contactsController">
+      <p></p>
+      <h1>Agenda de Contactos</h1>
+
+      <div flex id="div1">
+        <label for="nombres">Nombres</label>
+        <p></p>
+        <input type="text" ng-model="nombres" required/>
+        <p></p>
+        <label for="telefono">Teléfono</label>
+        <p></p>
+        <input type="text" ng-model="telefono" required />
+        <p></p>
+        <label for="date">Fecha de nacimiento</label>
+        <p></p>
+        <input type="text" ng-model="fecha de nacimiento" required />
+        <p></p>
+        <input type="date" ng-model="Direccion" required />
+        <p></p>
+        <input type="number" ng-model="Direccion" required />
+        <p></p>
+        <input type="email" ng-model="email" required />
+        <p></p>
+        
+        
+        <button ng-click="AgregarContacto($event)">Agregar</button>
+        <button ng-click="LimpiarCampos($event)">Limpiar</button>
+        <p></p>        
+      </div>
+      <div flex id="div2" ng-show="agenda">
+        <h2>Tus Contactos</h2>
+        <div class="contacto" ng-repeat="contacto in agenda">
+          <table class="tg">
+            <tr>
+             <th>
+                <span><b>Nombres: </b>{{contacto.nombres}}</span>
+                <p></p>
+                <span><b>Telefonob>{{contacto.teefonol}}</span>
+                <p></p>
+                <span><b>Fecha de nacimiento: </b>{{contacto.fecha de nacimiento}}</span>
+                <p></p>
+                <span><b>Direccion: </b>{{contacto.direccion}}</span>
+                <p></p>
+                <span><b>Email: </b>{{contacto.email}}</span>
+                <p></p>
+                
+                <span><b>E-mail: </b><a ng-href="mailto:"{{contacto.email}}>{{contacto.email}}</a></span>
+                <!--<span><b>Email: </b><a ng-href="{{link}}" ng-attr-target="{{target}}">{{contacto.email}}</a></span>-->
+              </th>
+            </tr>
+          </table>
+          <p></p>
+          <button ng-click="EliminarContacto(contacto)">Eliminar</button>
+        </div>
+      </div>
+
+      <div flex id="div3" ng-show="agenda.length > 1">
+        <h2>Buscar</h2>        
+        <input type="text" ng-model="buscar" ng-change="BuscarContactos()" />
+        <div class="encontrado" ng-repeat="contacto in encontrados">
+          <table class="tg">
+            <tr>
+              <th class="tg-yw4l"><img ng-src="{{linkImagen}}{{contacto.imagen}}" /></th>
+              <th class="tg-yw4l">
+                <span><b>Nombres: </b>{{contacto.nombres}}</span>
+                <p></p>
+                <span><b>Apellidos: </b>{{contacto.apellidos}}</span>
+                <p></p>
+                <span><b>Teléfono: </b>{{contacto.telefono}}</span>
+                <p></p>
+                <span><b>E-mail: </b><a ng-href="mailto:"{{contacto.email}}>{{contacto.email}}</a></span>
+                <!--<span><b>Email: </b><a ng-href="{{link}}" ng-attr-target="{{target}}">{{contacto.email}}</a></span>-->
+              </th>
+            </tr>
+          </table>
+          <p></p>
+          <button ng-click="ActualizarContacto(contacto)">Eliminar</button>
+          <button ng-click="ListarContacto(contacto)">Eliminar</button>
+          <button ng-click="EliminarContacto(contacto)">Eliminar</button>
+          <button ng-click="FiltrarContacto(contacto)">Eliminar</button>
+        </div>
+
+      </div>
+    </div>
+
+  </form>
+ 
+  <!-- Angular Material Dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc1/angular-material.min.js"></script>
+  <script src="https://rawgit.com/angular/bower-angular-sanitize/master/angular-sanitize.min.js"></script>
+</body>
+
+</html>

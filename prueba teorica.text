@@ -1,0 +1,63 @@
+1. . La sentencia button:hover { background-color: red; } qué efecto tendría en un
+botón?
+R// Efecto hover sobre el boton
+
+2. Explique con sus palabras la diferencia entre las etiquetas row, col y div.
+R//la diferencia es que row es un atributo de la  fila dentro de una tabla,y nos permite definir elemento y definir las loguitudes,
+col representa una o mas columnas dentro de una tanbla, y div sirve para crear secciones o agrupar contenido en bloques.
+
+
+3. ¿Cuál de los siguientes atributos prioriza el navegador al asignar un valor
+CSS?
+
+R//para priorizar se puede usar un archivo externo, o dentro de  la etiqueta <style></style>
+
+4. Encuentre el error en el siguiente fragmento de código:
+<form>
+<label for="age">Age:</label><br>
+<input type="integer" id="age" name="age"><br>
+<label for="genre">Genre:</label><br>
+<input type="text" id="genre" name="genre">
+<button type=”submit”>Submit</button>
+</form>
+
+R//el error esta en la linea 1
+
+
+5. Defina el uso de la etiqueta <!DOCTYPE html>
+R// informa  alos navegadores que tipo de documento esta escrito el documento
+
+
+6. ¿Qué es CORS y con qué problema está relacionado?
+R// un cors es un mecanismo de control de la cabecera http, se puede solucionar, comprobar la solicitud 
+del encabezado de origen o comprobar el metodo especificado, existen tambien otras formas en que podemos solucionar este problema
+
+
+
+
+7. Describa con sus palabras ¿qué es una API?
+R// una api basicamente es una interfaz  que nos permiten conectarnos a sistemas externos
+permitiendo la interaccion entre componentes.
+
+
+
+8. Explique la principal diferencia entre el método POST y PUT
+R// la diferencia es que metodo post nospermite guardar informacion o
+ recursos de informacion y va oculta en la cabecerra; y el metodo put actualizaa los recursos del servidor
+
+
+
+9. Mencione por lo menos 3 diferencias entre HTML5 y versiones anteriores de
+HTML
+R//.soporte multimedia
+-compatibilidad con los navegadores
+-sistema SGML.
+-aplicaciones mas dinamicas y estructuradsa
+
+
+
+
+10. ¿Cuál es el valor de la suma ?
+var suma = 7 + '23';
+R// UNDEFINED
+

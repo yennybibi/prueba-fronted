@@ -1,0 +1,87 @@
+body {
+  background-color: #151515;
+  text-align: center;
+}
+
+h1 {
+  font-family: Verdana, Helvetica;
+  color: #566573;
+  font-weight: bold;
+}
+
+h2 {
+  color: #566573;
+  font-family: Verdana, Helvetica;
+}
+
+label {
+  color: #959DA5;
+  font-family: Verdana, Helvetica;
+  font-weight: bold;
+}
+
+input {
+  font-family: Verdana, Helvetica;
+  color: gray;
+}
+
+b {
+  font-size: 12px;
+  font-family: Verdana, Helvetica;
+  color: gray;
+}
+
+button {
+  font-size: 10px;
+  font-family: Verdana, Helvetica;
+  font-weight: bold;
+  color: white;
+  background-color: #2594F5;
+  border: 0px;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.contacto {
+  padding: 10px;
+}
+
+.encontrado {
+  padding: 10px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+table {
+  text-align: left;
+  background-color: #86C2F2;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+table tr th span {
+  color: white;
+  font-family: Verdana, Helvetica;
+  font-size: 12px;
+}
+
+hr {
+  color: black;
+}
+
+#div1 {	
+  background-color: #252222;
+}
+
+#div2 {	
+  background-color: #252222;
+}
+
+#div3 {	
+  background-color: #252222;
+}
