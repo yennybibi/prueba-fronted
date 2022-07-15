@@ -1,6 +1,6 @@
 1. . La sentencia button:hover { background-color: red; } qué efecto tendría en un
 botón?
-R// Efecto hover sobre el boton
+R// Efecto hover al pasar mouse sobre el boton se activa.
 
 2. Explique con sus palabras la diferencia entre las etiquetas row, col y div.
 R//la diferencia es que row es un atributo de la  fila dentro de una tabla,y nos permite definir elemento y definir las loguitudes,
@@ -10,7 +10,7 @@ col representa una o mas columnas dentro de una tanbla, y div sirve para crear s
 3. ¿Cuál de los siguientes atributos prioriza el navegador al asignar un valor
 CSS?
 
-R//para priorizar se puede usar un archivo externo, o dentro de  la etiqueta <style></style>, o estilos inline
+R//para priorizar se puede usar un archivo externo, o dentro de  la etiqueta <style></style>, o estilos inlin.
 
 4. Encuentre el error en el siguiente fragmento de código:
 <form>
@@ -25,7 +25,7 @@ R//el error esta en la linea 1
 
 
 5. Defina el uso de la etiqueta <!DOCTYPE html>
-R// informa  alos navegadores que tipo de documento esta escrito el documento
+R// informa  alos navegadores que tipo de lenguage esta escrito el documento.
 
 
 6. ¿Qué es CORS y con qué problema está relacionado?
@@ -42,8 +42,8 @@ permitiendo la interaccion entre componentes.
 
 
 8. Explique la principal diferencia entre el método POST y PUT
-R// la diferencia es que metodo post nospermite guardar informacion o
- recursos de informacion y va oculta en la cabecerra; y el metodo put actualizaa los recursos del servidor
+R// la diferencia es que metodo post nos permite guardar informacion o
+ recursos de informacion y va oculta en la cabecerra; y el metodo put actualizaa los recursos del servidor y debe proporcionar el id, este su objetivo principal
 
 
 
@@ -59,5 +59,5 @@ R//.soporte multimedia
 
 10. ¿Cuál es el valor de la suma ?
 var suma = 7 + '23';
-R// UNDEFINED
+R// Undefined
 
