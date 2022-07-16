@@ -24,7 +24,7 @@ if (isset($_GET["consultar"])){
 }
 //borrar pero se le debe de enviar una clave ( para borrado )
 if (isset($_GET["borrar"])){
-    $sqlcintactoss = mysqli_query($conexionBD,"DELETE FROM empleados WHERE id=".$_GET["borrar"]);
+    $sqlcontactos = mysqli_query($conexionBD,"DELETE FROM contactos WHERE id=".$_GET["borrar"]);
     if($sqlcontactos){
         echo json_encode(["success"=>1]);
         exit();
