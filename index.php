@@ -24,7 +24,7 @@ if (isset($_GET["consultar"])){
 }
 //borrar pero se le debe de enviar una clave ( para borrado )
 if (isset($_GET["borrar"])){
-    $sqlEmpleaados = mysqli_query($conexionBD,"DELETE FROM empleados WHERE id=".$_GET["borrar"]);
+    $sqlcintactoss = mysqli_query($conexionBD,"DELETE FROM empleados WHERE id=".$_GET["borrar"]);
     if($sqlcontactos){
         echo json_encode(["success"=>1]);
         exit();
@@ -38,7 +38,7 @@ if(isset($_GET["insertar"])){
     $correo=$data->correo;
         if(($correo!="")&&($nombre!="")){
             
-    $sqlEmpleaados = mysqli_query($conexionBD,"INSERT INTO contacto(nombre,correo) VALUES('$nombre','$correo') ");
+    $sqlcontactos = mysqli_query($conexionBD,"INSERT INTO contacto(nombre,correo) VALUES('$nombre','$correo') ");
     echo json_encode(["success"=>1]);
         }
     exit();
