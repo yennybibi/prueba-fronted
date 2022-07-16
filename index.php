@@ -14,9 +14,9 @@ $conexionBD = new mysqli($servidor, $usuario, $contrasenia, $nombreBaseDatos);
 
 // Consulta datos y recepciona una clave para consultar dichos datos con dicha clave
 if (isset($_GET["consultar"])){
-    $sqlEmpleaados = mysqli_query($conexionBD,"SELECT * FROM  contacto WHERE id=".$_GET["consultar"]);
+    $sqlcontactos = mysqli_query($conexionBD,"SELECT * FROM  contacto WHERE id=".$_GET["consultar"]);
     if(mysqli_num_rows($sqlContacto) > 0){
-        $empleaados = mysqli_fetch_all($sqlContactos,MYSQLI_ASSOC);
+        $contactos = mysqli_fetch_all($sqlContactos,MYSQLI_ASSOC);
         echo json_encode($contactos);
         exit();
     }
@@ -25,7 +25,7 @@ if (isset($_GET["consultar"])){
 //borrar pero se le debe de enviar una clave ( para borrado )
 if (isset($_GET["borrar"])){
     $sqlEmpleaados = mysqli_query($conexionBD,"DELETE FROM empleados WHERE id=".$_GET["borrar"]);
-    if($sqlEmpleaados){
+    if($sqlcontactos){
         echo json_encode(["success"=>1]);
         exit();
     }
